@@ -1,0 +1,6 @@
+{
+  "prettier.configPath": ".prettierrc",
+  "prettier.prettierPath": "node_modules/prettier/index.cjs",
+  "prettier.ignorePath": ".prettierignore",
+  "eslint.workingDirectories": [{ "mode": "auto" }]
+}

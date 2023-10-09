@@ -1,0 +1,36 @@
+.inventory-item {
+  flex: 1;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  will-change: filter;
+  &:before {
+    inset: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      var(--color) 35%,
+      var(--mantine-primary-color-filled) 100%
+    );
+    filter: blur(100px) saturate(clamp(0.5, var(--enchantment, 1) / 10, 1.5))
+      contrast(clamp(0.5, var(--enchantment, 1) / 5, 1.5));
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__icon {
+    filter: drop-shadow(
+      calc(var(--enchantment) * 1px) calc(var(--enchantment) * 1px)
+        calc(var(--enchantment) * 2px) var(--color)
+    );
+  }
+}

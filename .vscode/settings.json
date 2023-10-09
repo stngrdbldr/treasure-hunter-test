@@ -1,0 +1,7 @@
+{
+  "prettier.configPath": "./treasure-hunters-react/.prettierrc",
+  "prettier.prettierPath": "./treasure-hunters-react/node_modules/prettier/index.cjs",
+  "prettier.ignorePath": "./treasure-hunters-react/.prettierignore",
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "typescript.tsdk": "./treasure-hunters-react/node_modules/typescript/lib"
+}
